@@ -1,2 +1,18 @@
-hej
 
+Title of Paper
+
+```{r, include=FALSE}
+# include viser ikke noget i html filen men kører kun koden
+library(GLMsData)
+library(statmod)
+library(tweedie)
+library(mgcv)
+```
+
+```{r, echo=FALSE} 
+# echo inkludere ikke koden men kun outputtet
+Rain.data = read.table("RaindataEromanga.txt", header = TRUE)
+head(Rain.data)
+summary(Rain.data)
+
+```
